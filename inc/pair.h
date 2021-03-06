@@ -2,7 +2,11 @@
 # define PAIR_H
 
 typedef struct	s_pair {
-		void *first;
+		union
+		{
+			void *first;
+			char *key;
+		}u;
 		void *second;
 }		t_pair;
 
