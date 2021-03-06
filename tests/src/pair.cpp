@@ -26,6 +26,6 @@ extern "C" {
 
 TEST_CASE( "pair create-destroy", "[pair]" ) {
 	t_pair *pair = pair_create((void *)"hello", (void *)"wolrd");
-	printf("first=%s\nsecond=%s\n", pair->u.key, (char *)pair->second);
+	printf("first=%s\nsecond=%s\n", pair->f.key, (char *)pair->s.second);
 	pair_destroy(pair);
 }

@@ -6,8 +6,12 @@ typedef struct	s_pair {
 		{
 			void *first;
 			char *key;
-		}u;
-		void *second;
+		}f;
+		union
+		{
+			void *second;
+			void *value;
+		}s;
 }		t_pair;
 
 t_pair	*pair_create(void *_first, void *_second);

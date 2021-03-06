@@ -8,8 +8,8 @@ t_pair	*pair_create(void *_first, void *_second)
 	pair = malloc(sizeof(t_pair));
 	if (!pair || !_first || !_second)
 		return (NULL);
-	pair->u.first = _first;
-	pair->second = _second;
+	pair->f.first = _first;
+	pair->s.second = _second;
 	return (pair);
 }
 
