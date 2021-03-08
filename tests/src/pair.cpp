@@ -23,9 +23,12 @@ extern "C" {
 }
 
 #include <stdio.h>
+#include <string.h>
 
 TEST_CASE( "pair create-destroy", "[pair]" ) {
-	t_pair *pair = pair_create((void *)"hello", (void *)"wolrd");
+	char *key = strdup("hello");
+	char *value = strdup("world");
+	t_pair *pair = pair_create((void *)key, (void *)value);
 	printf("first=%s\nsecond=%s\n", pair->f.key, (char *)pair->s.second);
-	pair_destroy(pair);
+	pair_destroy(pair, free, free);
 }
