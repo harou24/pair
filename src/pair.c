@@ -13,9 +13,7 @@ t_pair	*pair_create(void *_first, void *_second)
 	return (pair);
 }
 
-void pair_destroy(t_pair *_pair, void (*_ft_delete_first)(void*), void (*_ft_delete_second)(void*))
+void pair_destroy(t_pair *_pair)
 {
-	_ft_delete_first(_pair->f.first);
-	_ft_delete_second(_pair->s.second);
 	free(_pair);
 }
