@@ -3,7 +3,7 @@
 
 t_pair	*pair_create(void *_first, void *_second)
 {
-	t_pair *pair;
+	t_pair	*pair;
 
 	pair = malloc(sizeof(t_pair));
 	if (!pair || !_first || !_second)
@@ -13,7 +13,7 @@ t_pair	*pair_create(void *_first, void *_second)
 	return (pair);
 }
 
-void pair_destroy(t_pair *_pair)
+void	pair_destroy(t_pair *_pair)
 {
 	free(_pair);
 }
