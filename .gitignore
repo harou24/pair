@@ -85,7 +85,6 @@ CMakeCache.txt
 CMakeFiles
 CMakeScripts
 Testing
-Makefile
 cmake_install.cmake
 install_manifest.txt
 compile_commands.json
@@ -505,8 +504,6 @@ CMakeDoxyfile.in
 CMakeDoxygenDefaults.cmake
 Doxyfile.docs
 # End of Doxygen rules
-
-Makefile
 build
 obj
 *.bin
