@@ -11,10 +11,10 @@ project(
 # Only do these if this is the main project, and not if it is included through add_subdirectory
 if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
 	# global compilation standards
-	set(CMAKE_C_STANDARD 90)
+	set(CMAKE_C_STANDARD 11)
 	set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Werror -Wextra -pedantic")
 	
-	set(CMAKE_CXX_STANDARD 98)
+	set(CMAKE_CXX_STANDARD 11)
 	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -Wextra -pedantic")
 
 	include(CTest)
